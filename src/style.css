@@ -1,0 +1,23 @@
+:root {
+    --mag-main-color: #8C00B2;
+    --mag-secondary-color: #F05656;
+}
+
+.bg-mag-main {
+    background-color: var(--mag-main-color);
+}
+
+.mag-border-bottom {
+    border-bottom: var(--mag-secondary-color) solid .1875rem;
+}
+
+@media screen and (max-width: 768px){
+    .navbar-brand-mag img{
+        width: 8.75rem;
+        height: auto;
+    }
+
+    .btn-group-mag{
+        display: grid;
+    }
+}
