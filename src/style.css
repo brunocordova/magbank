@@ -1,7 +1,5 @@
-:root {
-    --mag-main-color: #8C00B2;
-    --mag-secondary-color: #F05656;
-}
+@import './_variables.css';
+@import './_utils.css';
 
 .bg-mag-main {
     background-color: var(--mag-main-color);
@@ -42,8 +40,37 @@
 }
 
 .mag-credit-card {
+    padding: 1rem;
     padding-top: 3.75rem;
     padding-bottom: 4.6875rem;
+    font-size: 1.3rem;
+    color: var(--mag-copy-color);
+}
+
+.mag-credit-card i {
+    font-size: 2.375rem;
+}
+
+.mag-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.mag-icon-and-text {
+    display: grid;
+    grid-template-columns: 2.375rem auto;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
+
+.mag-icon-and-text:last-of-type{
+    margin-bottom: 5rem;
+}
+
+.mag-icon-and-text i{
+    place-self: center;
 }
 
 @media screen and (min-width: 768px){
@@ -74,5 +101,13 @@
     .mag-credit-card {
         padding-top: 6.25rem;
         padding-bottom: 5rem;
+    }
+
+    .mag-title {
+        font-size: 3.5rem;
+    }
+
+    .mag-icon-and-text:last-of-type{
+        margin-bottom: 1.875rem;
     }
 }
