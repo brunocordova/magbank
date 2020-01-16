@@ -5,3 +5,14 @@
 .mag-secondary-color {
     color: var(--mag-secondary-color);
 }
+
+.mag-btn-secondary-color {
+    background-color: var(--mag-secondary-color);
+    border-color: var(--mag-secondary-color);
+    color: white;
+}
+
+.mag-btn-secondary-color:hover {
+    filter: grayscale(20%);
+    color: white;
+}
