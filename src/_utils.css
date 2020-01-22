@@ -12,7 +12,18 @@
     color: white;
 }
 
-.mag-btn-secondary-color:hover {
+.mag-btn:hover {
     filter: grayscale(20%);
     color: white;
+}
+
+.mag-card-footer {
+    background-color: unset;
+    border-top: unset;
+}
+
+.mag-btn-success {
+    background-color: var(--mag-success-color);
+    color: white;
+    border-color: var(--mag-success-color);
 }
