@@ -6,14 +6,9 @@
     color: var(--mag-secondary-color);
 }
 
-.mag-btn-secondary-color {
+.mag-btn-secondary {
     background-color: var(--mag-secondary-color);
     border-color: var(--mag-secondary-color);
-    color: white;
-}
-
-.mag-btn:hover {
-    filter: grayscale(20%);
     color: white;
 }
 
@@ -22,8 +17,26 @@
     border-top: unset;
 }
 
-.mag-btn-success {
-    background-color: var(--mag-success-color);
+.mag-btn-sucess {
+    background-color: var(--mag-sucess-color);
+    border-color: var(--mag-sucess-color);
     color: white;
-    border-color: var(--mag-success-color);
+}
+
+.mag-btn:hover {
+    filter: grayscale(20%);
+    color: white;
+}
+
+.mag-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .mag-title {
+        font-size: 3.5rem;
+    }
 }

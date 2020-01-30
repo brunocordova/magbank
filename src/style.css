@@ -6,15 +6,15 @@
 }
 
 .mag-border-bottom {
-    border-bottom: var(--mag-secondary-color) solid .1875rem;
+    border-bottom: .1875rem var(--mag-secondary-color) solid;
 }
 
-.navbar-brand-mag img{
+.navbar-brand-mag img {
     width: 8.75rem;
     height: auto;
 }
 
-.btn-group-mag{
+.btn-group-mag {
     display: grid;
 }
 
@@ -24,6 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -51,12 +52,6 @@
     font-size: 2.375rem;
 }
 
-.mag-title {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 3rem;
-}
-
 .mag-icon-and-text {
     display: grid;
     grid-template-columns: 2.375rem auto;
@@ -65,33 +60,64 @@
     margin-bottom: 1.875rem;
 }
 
-.mag-icon-and-text:last-of-type{
+.mag-icon-and-text:last-of-type {
     margin-bottom: 5rem;
 }
 
-.mag-icon-and-text i{
-    place-self: center;
+.mag-icon-and-text i {
+    justify-self: center;
 }
 
-@media screen and (min-width: 768px){
+.mag-about-us {
+    padding-top: 6.25rem;
+    padding-bottom: 7.5rem;
+    
+    color: white;
+    background-image: url(./assets/quem-somos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mag-about-us .mag-icon-and-text {
+    gap: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.mag-about-us .mag-icon-and-text:first-of-type {
+    margin-top: 4rem;
+}
+
+.mag-about-us .mag-icon-and-text:last-of-type {
+    margin-bottom: 4rem;
+}
+
+
+.mag-about-us i {
+    font-size: 1.875rem;
+}
+
+.mag-faq {
+    padding-top: 5rem;
+    padding-bottom: 5.625rem;
+}
+
+@media screen and (min-width: 768px) {
     .navbar-brand-mag {
         margin-right: 6.5625rem;
-        
     }
 
-    .navbar-brand-mag img{
+    .navbar-brand-mag img {
         width: 100%;
-        height: auto;
     }
-
-    .btn-group-mag{
+    
+    .btn-group-mag {
         display: inline-flex;
     }
 
     .mag-banner-logo {
         max-width: 100%;
         margin: 0;
-
     }
 
     .mag-banner-row {
@@ -99,15 +125,16 @@
     }
 
     .mag-credit-card {
-        padding-top: 6.25rem;
+        padding-top: 6.15rem;
         padding-bottom: 5rem;
     }
 
-    .mag-title {
-        font-size: 3.5rem;
+    .mag-icon-and-text:last-of-type {
+        margin-bottom: 1.875rem;
     }
 
-    .mag-icon-and-text:last-of-type{
-        margin-bottom: 1.875rem;
+    .mag-about-us {
+        padding-top: 7.5rem;
+        padding-bottom: 6.25rem;
     }
 }
