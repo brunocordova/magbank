@@ -100,11 +100,28 @@
 .mag-faq {
     padding-top: 5rem;
     padding-bottom: 5.625rem;
+    color: #ffffff;
+    background-color: var(--mag-faq-background);
 }
 
 .mag-faq .mag-icon-and-text{
+    cursor: pointer;
     grid-template-columns: 1fr;
+    color: var(--mag-faq-inactive);
+}
 
+.mag-faq .card {
+    border-color: var(--mag-faq-color);
+    background: unset;
+}
+
+.mag-faq .card-header {
+    cursor: pointer;
+    background-color: var(--mag-faq-color);
+}
+
+.mag-faq .card-header h5{
+    font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -134,7 +151,7 @@
         padding-bottom: 5rem;
     }
 
-    .mag-icon-and-text:last-of-type {
+    .mag-credit-card .mag-icon-and-text:last-of-type {
         margin-bottom: 1.875rem;
     }
 
