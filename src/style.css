@@ -124,6 +124,10 @@
     font-weight: 400;
 }
 
+.mag-footer {
+    color: #7c7c7c;
+}
+
 @media screen and (min-width: 768px) {
     .navbar-brand-mag {
         margin-right: 6.5625rem;
